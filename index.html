@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="shortcut icon"
+			href="./images/favicon-32x32.png"
+			type="image/x-icon"
+		/>
+		<!-- google fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./css/style.css" />
+		<title>Interactive rating component ✨</title>
+	</head>
+	<body>
+		<main>
+			<div class="card">
+				<!-- content -->
+				<div class="content-wrapper">
+					<img src="./images/icon-star.svg" alt="just a star icon" />
+					<h2>How did we do?</h2>
+					<p>
+						Please let us know how we did with your support request. All
+						feedback is appreciated to help us improve our offering!
+					</p>
+					<form action="#" class="rating-form">
+						<style></style>
+						<div class="rating">
+							<input type="radio" id="one" value="1" name="rate" />
+							<label for="one">1 </label>
+							<input type="radio" id="two" value="2" name="rate" />
+							<label for="two">2 </label>
+							<input type="radio" id="three" value="3" name="rate" />
+							<label for="three">3 </label>
+							<input type="radio" id="four" checked value="4" name="rate" />
+							<label for="four">4 </label>
+							<input type="radio" id="five" value="5" name="rate" />
+							<label for="five">5 </label>
+						</div>
+						<button type="submit" class="btn">Submit</button>
+					</form>
+				</div>
+				<!-- thanks -->
+				<div class="thanks-wrapper hide">
+					<img src="./images/illustration-thank-you.svg" alt="" />
+					<span class="block">
+						You selected <span id="rated">4</span> out of 5
+					</span>
+					<h2>Thank you!</h2>
+					<p>
+						We appreciate you taking the time to give a rating. If you ever need
+						more support, don’t hesitate to get in touch!
+					</p>
+				</div>
+			</div>
+		</main>
+		<script src="./js/main.js"></script>
+	</body>
+</html>

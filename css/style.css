@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  color: #fff;
+  font-family: "Overpass", sans-serif;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  align-items: center;
+  background-color: #121417;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  overflow: hidden;
+  width: 100vw;
+}
+
+.card {
+  background-color: #252d37;
+  border-radius: 20px;
+  max-width: 330px;
+  overflow: hidden;
+  padding: 30px;
+  width: 90%;
+  margin-inline: auto;
+}
+.card .content-wrapper img {
+  border-radius: 50%;
+  background-color: hsl(215deg, 17%, 22%);
+  padding: 10px;
+}
+.card h2 {
+  font-size: 1.5rem;
+  padding: 15px 0;
+}
+.card p {
+  color: hsl(216deg, 12%, 54%);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.rating-form {
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+.rating-form .rating {
+  margin: 15px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.rating-form .rating label {
+  background-color: hsl(215deg, 17%, 22%);
+  color: hsl(217deg, 12%, 63%);
+  line-height: 3rem;
+  font-weight: bold;
+  text-align: center;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.rating-form .rating label:hover {
+  background-color: hsl(217deg, 12%, 63%) !important;
+  color: #fff !important;
+}
+.rating-form input[type=radio]:checked + label {
+  background-color: hsl(25deg, 97%, 53%) !important;
+  color: #fff !important;
+}
+.rating-form input {
+  display: none;
+}
+.rating-form button {
+  background-color: hsl(25deg, 97%, 53%);
+  opacity: 0.8;
+  padding: 10px 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.3s;
+}
+.rating-form button:hover {
+  color: hsl(25deg, 97%, 53%);
+  background-color: #fff;
+}
+
+.btn {
+  cursor: pointer;
+  transition: all 0.3s;
+  border: none;
+  width: 100%;
+  margin-inline: auto;
+  max-width: 330px;
+  border-radius: 30px;
+}
+
+.card .thanks-wrapper {
+  text-align: center;
+}
+.card .thanks-wrapper .block {
+  background-color: hsl(215deg, 17%, 22%);
+  padding: 2px 20px;
+  border-radius: 20px;
+  margin: 20px 0 10px;
+  color: hsl(25deg, 97%, 53%);
+  line-height: 30px;
+  vertical-align: baseline;
+  height: 30px;
+}
+.card .thanks-wrapper #rated {
+  color: hsl(25deg, 97%, 53%);
+}
+
+/*=============================================
+  copyright
+=============================================*/
+.copyright {
+  padding: 1rem;
+  text-align: center;
+  background-color: #363744;
+  font-size: 0.85rem;
+}
+
+.hide {
+  display: none;
+  transition: all 0.4s;
+}
+
+.show {
+  display: block;
+  transition: all 0.4s;
+}
+
+.block {
+  display: inline-block;
+}
+
+.hidden {
+  position: absolute;
+  top: -10rem;
+  left: -10rem;
+  width: 0px;
+  height: 0px;
+}
+
+/*# sourceMappingURL=style.css.map */

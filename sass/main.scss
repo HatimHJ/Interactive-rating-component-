@@ -1,0 +1,135 @@
+*{
+  box-sizing: border-box;
+  color: #fff;
+  font-family: 'Overpass', sans-serif;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+main{
+  align-items: center;
+  background-color: #121417;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  overflow: hidden;
+  width: 100vw;
+}
+
+// card==============================
+.card{
+  background-color: #252d37;
+  border-radius: 20px;
+  max-width: 330px;
+  overflow: hidden;
+  padding: 30px;
+  width: 90%;
+  margin-inline:auto;
+  .content-wrapper img{
+    border-radius: 50%;
+    background-color: hsl(215deg 17% 22%);
+    padding: 10px;
+  }
+  h2{
+    font-size: 1.5rem;
+    padding: 15px 0;
+  }
+  p{
+    color: hsl(216, 12%, 54%);
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+}
+
+.rating-form{
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  .rating{
+    margin: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    label{
+      background-color: hsl(215deg, 17%, 22%);
+      color:  hsl(217, 12%, 63%);
+      line-height: 3rem;
+      font-weight: bold;
+      text-align: center;
+      height: 3rem;
+      width: 3rem;
+      border-radius: 50%;
+      display: inline-block;
+      margin-right: 5px;
+      margin-bottom: 5px;  
+      cursor: pointer;
+      transition: .3s;
+    }
+    label:hover{  
+      background-color: hsl(217, 12%, 63%) !important;
+      color: #fff !important;
+    }
+  }
+  input[type="radio"]:checked + label {
+    background-color: hsl(25, 97%, 53%) !important;
+    color: #fff !important;
+  }
+  input{
+    display: none;
+  }
+  button{
+    background-color: hsl(25deg, 97%, 53%);
+    opacity: .8;
+    padding: 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: .3s;
+    &:hover{
+      color: hsl(25deg, 97%, 53%);
+      background-color: #fff;
+      
+    }
+  }
+}
+.btn{
+  cursor: pointer;
+  transition: all .3s;
+  border: none;
+  width: 100%;
+  margin-inline: auto;
+  max-width: 330px;
+  border-radius: 30px;
+}
+// thanks==============================
+.card .thanks-wrapper{
+  text-align: center;
+  .block{
+    background-color: hsl(215deg, 17%, 22%);
+    padding: 2px 20px;
+    border-radius: 20px;
+    margin: 20px 0 10px;
+    color: hsl(25deg, 97%, 53%);
+    line-height: 30px;
+    vertical-align: baseline;
+    height: 30px; 
+  }
+  #rated{color: hsl(25deg, 97%, 53%);}
+}
+
+
+
+/*=============================================
+  copyright
+=============================================*/
+@import './copyright';
+@import './classes';
+
+.hidden{
+  position: absolute;
+  top: -10rem;
+  left: -10rem;
+  width: 0px;height: 0px;
+}
